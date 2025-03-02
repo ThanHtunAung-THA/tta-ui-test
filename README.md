@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+1. Layout and Responsive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Create Simple Web Layout with React, CSS including Responsive.You can use other images.
+https://drive.google.com/file/d/1Lxs2GorrGJ3jHsCZW6AcxhnQIBmZxfwK/view?usp=sharing
+** You can also use HTML or others framework that you’re familiar with 
 
-Currently, two official plugins are available:
+2. Interactive
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Create an interactive layout with CSS, React. 
+https://xd.adobe.com/view/1f2b0198-eec0-4039-a5bf-5803c7375a75-4a78/
+** You can also use HTML or others framework that you’re familiar with 
 
-## Expanding the ESLint configuration
+3. Integration 
+--------------------------
+3. Integrate the second layout with free audio db api. 
+Eg. https://www.theaudiodb.com/api_guide.php
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+=====================================================
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+General Coding Assessment 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Write a script for the machine. 
+https://app.diagrams.net/#G1m3e_pav4Ow1cQxxeV3jJpeXR3iD6Slok
+ 
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. Write a simple api to generate challenges  json data
+
+ from csv files. (in Django)
+-	The file can be downloaded as csv file
+API Test
+-	Create an api route that generates json data from the csv file. 
+
+3. Try to write No.2 in the graphQL.
+-	Testing for your learning skills only.
+-	No need to be completed 100%. 
+
