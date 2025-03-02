@@ -88,11 +88,11 @@ const TrendingSection = () => {
   const totalPages = Math.ceil(trendingItems.length / itemsPerPage);
 
   const handlePrevious = () => {
-    setCurrentPage(prev => (prev > 0 ? prev - 1 : prev));
+    setCurrentPage(prev => prev === 0 ? totalPages - 1 : prev - 1);
   };
 
   const handleNext = () => {
-    setCurrentPage(prev => (prev < totalPages - 1 ? prev + 1 : prev));
+    setCurrentPage(prev => prev === totalPages - 1 ? 0 : prev + 1);
   };
 
   const currentItems = trendingItems.slice(
@@ -107,20 +107,18 @@ const TrendingSection = () => {
           <h2 className="text-2xl font-bold text-gray-900">TRENDING</h2>
           <div className="flex gap-2">
             <button 
-              className={`p-2 rounded-full ${currentPage === 0 ? 'bg-gray-200 text-gray-400' : 'bg-gray-200 hover:bg-gray-300 text-gray-600'}`}
+              className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-600"
               onClick={handlePrevious}
-              disabled={currentPage === 0}
             >
               <span className="sr-only">Previous</span>
-              <img src="https://www.svgrepo.com/show/510039/left-chevron.svg" alt="left" className="w-6 h-6" />
+              <img src="https://www.svgrepo.com/show/510039/left-chevron.svg" alt="left" className="w-6 h-6 swiper-button-prev"/>
             </button>
             <button 
-              className={`p-2 rounded-full ${currentPage === totalPages - 1 ? 'bg-gray-200 text-gray-400' : 'bg-gray-200 hover:bg-gray-300 text-gray-600'}`}
+              className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-600"
               onClick={handleNext}
-              disabled={currentPage === totalPages - 1}
             >
               <span className="sr-only">Next</span>
-              <img src="https://www.svgrepo.com/show/510166/right-chevron.svg" alt="right" className="w-6 h-6" />
+              <img src="https://www.svgrepo.com/show/510166/right-chevron.svg" alt="right" className="w-6 h-6 swiper-button-next" />
             </button>
           </div>
         </div>

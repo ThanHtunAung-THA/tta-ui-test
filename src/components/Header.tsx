@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-pink-600">LOGO</div>
+        <div className="text-2xl font-bold text-pink-600">TTA TRAVEL</div>
         <div className="hidden md:flex items-center space-x-6">
           <a href="#" className="hover:text-pink-600">HOME</a>
           <a href="#" className="hover:text-pink-600">DISCOVERY</a>

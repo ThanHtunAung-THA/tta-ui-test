@@ -70,3 +70,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.5rem;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-disabled {
+  opacity: 0;
+}
+
+.swiper-button-disabled:hover {
+  opacity: 0;
+}
+

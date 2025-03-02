@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       
       <div className="relative h-full flex items-center">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 ml-4 mt-4 md:ml-[300px] md:mt-[300px]">
           <div className="max-w-2xl text-white">
             <p className="text-sm font-semibold mb-4">WORLD NEWS</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Amazing places in America to visit.</h1>
